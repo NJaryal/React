@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1563950850686" clover="3.2.0">
+  <project timestamp="1563950850686" name="All files">
+    <metrics statements="71" coveredstatements="59" conditionals="22" coveredconditionals="13" methods="35" coveredmethods="13" elements="128" coveredelements="85" complexity="0" loc="71" ncloc="71" packages="10" files="16" classes="16"/>
+    <package name="Utils">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="index.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\Utils\index.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Footer">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Footer.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\Footer\Footer.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Header">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Header.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\Header\Header.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Movie">
+      <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="2"/>
+      <file name="Movie.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\Movie\Movie.js">
+        <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="2" falsecount="2"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.MovieDetailed">
+      <metrics statements="8" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="MovieDetailed.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\MovieDetailed\MovieDetailed.js">
+        <metrics statements="4" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+      <file name="MovieDetailedActions.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\MovieDetailed\MovieDetailedActions.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.NotFound">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="NotFound.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\NotFound\NotFound.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Search">
+      <metrics statements="11" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="2"/>
+      <file name="Search.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\Search\Search.js">
+        <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+      </file>
+      <file name="SearchActions.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\Search\SearchActions.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.SearchByType">
+      <metrics statements="15" coveredstatements="12" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="2"/>
+      <file name="SearchByType.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\SearchByType\SearchByType.js">
+        <metrics statements="7" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+      <file name="SearchByTypeActions.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\SearchByType\SearchByTypeActions.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="SearchByTypeReducer.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\SearchByType\SearchByTypeReducer.js">
+        <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="cond" truecount="2" falsecount="1"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.SortByCategory">
+      <metrics statements="15" coveredstatements="11" conditionals="8" coveredconditionals="5" methods="7" coveredmethods="2"/>
+      <file name="SortByCategory.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\SortByCategory\SortByCategory.js">
+        <metrics statements="7" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+      </file>
+      <file name="SortByCategoryActions.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\SortByCategory\SortByCategoryActions.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="SortByCategoryReducer.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\SortByCategory\SortByCategoryReducer.js">
+        <metrics statements="4" coveredstatements="2" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="2"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.common">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Button.js" path="C:\Users\Nitin_Jaryal\Front Camp\ReactApp\src\components\common\Button.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
