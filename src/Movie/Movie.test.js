@@ -15,7 +15,7 @@ describe('Movie component', () => {
         match: {},
       };
       const propdError = checkProps(Movie, expectedprops);
-      expect(propdError).toBeDefined();
+      expect(propdError).toBeUndefined();
     });
   });
 
