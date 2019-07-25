@@ -9,7 +9,7 @@ const Routes = () => (
   <Router history={history}>
     <Switch>
       <Route path="/" exact component={MovieList} />
-      <Route path="/film/:id" component={Movie} />
+      <Route path="/film/:id" exact component={Movie} />
       <Route component={NotFound} />
     </Switch>
   </Router>

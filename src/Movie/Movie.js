@@ -10,9 +10,6 @@ export class Movie extends Component {
     const { match } = this.props;
     const id = match && match.params ? match.params.id : 0;
     this.props.requestSingleMovieData(id);
-    loadtoDos()
-      .then(({ data }) => this.setState({ todos: data }))
-      .catch(() => this.setState({ error: true }))
   }
 
   render() {
