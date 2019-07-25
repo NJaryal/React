@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SortByCategory component should show snapshot 1`] = `
+<div
+  className="moviesubheadingSection clearfix"
+  data-test="SortByCategory"
+>
+  <div
+    className="float-left float-md-left"
+    data-test="count"
+  >
+    <strong />
+    movie found
+  </div>
+  <div
+    className="float-right float-md-right"
+    data-test="activeSort"
+  >
+    SORT BY
+    <Button
+      className="cx(globalStyles['btn-sm'], globalStyles['ml-1']) inactive"
+    >
+      RELEASE DATE
+    </Button>
+    <Button
+      className="cx(globalStyles['btn-sm'], globalStyles['ml-1']) inactive"
+    >
+      RATING
+    </Button>
+  </div>
+</div>
+`;
