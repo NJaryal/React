@@ -4,7 +4,7 @@ import { SortByCategory } from './SortByCategory';
 import { findByTestAttr, checkProps } from '../../Utils';
 import SortByCategoryReducer from './SortByCategoryReducer';
 
-const setup = (props = {}) => {
+const renderSortByCategory = (props = {}) => {
   const component = shallow(<SortByCategory {...props} />);
   return component;
 };
@@ -28,7 +28,7 @@ describe('SortByCategory component', () => {
         count: 10,
         activeSort: 'release',
       };
-      wrapper = setup(props);
+      wrapper = renderSortByCategory(props);
     });
     it('should render', () => {
       const component = findByTestAttr(wrapper, 'SortByCategory');
@@ -58,7 +58,7 @@ describe('SortByCategory component', () => {
   describe('should show', () => {
     let component;
     beforeEach(() => {
-      component = setup();
+      component = renderSortByCategory();
     });
     it('snapshot', () => {
       expect(component).toMatchSnapshot();

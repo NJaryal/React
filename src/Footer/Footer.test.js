@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Footer from './Footer';
 
-const setup = () => {
+const renderFooter = () => {
   const component = shallow(<Footer />);
   return component;
 };
@@ -10,10 +10,10 @@ const setup = () => {
 describe('Footer component', () => {
   let component;
   beforeEach(() => {
-    component = setup();
+    component = renderFooter();
   });
 
-  it('should render Component', () => {
+  it('should render without errors', () => {
     expect(component).toMatchSnapshot();
   });
 });

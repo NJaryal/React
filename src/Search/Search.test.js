@@ -3,31 +3,29 @@ import { shallow } from 'enzyme';
 import { findByTestAttr, checkProps } from '../../Utils';
 import { Search } from './Search';
 
-const setup = (props = {}) => {
+const renderSearch = (props = {}) => {
   const component = shallow(<Search {...props} />);
   return component;
 };
 
-describe('Search component', () => {
-  describe('should render Search', () => {
-    let component;
-    beforeEach(() => {
-      component = setup();
-    });
-  
-    it('should render Search', () => {
-      const findMovieText = findByTestAttr(component, 'SearchComponent');
-      expect(findMovieText.length).toBe(1);
-    });
+describe('should render Search', () => {
+  let component;
+  beforeEach(() => {
+    component = renderSearch();
   });
 
-  describe('show', () => {
-    let component;
-    beforeEach(() => {
-      component = setup();
-    });
-    it('Snapshot', () => {
-      expect(component).toMatchSnapshot();
-    });
+  it('should render Search', () => {
+    const findMovieText = findByTestAttr(component, 'SearchComponent');
+    expect(findMovieText.length).toBe(1);
+  });
+});
+
+describe('show', () => {
+  let component;
+  beforeEach(() => {
+    component = renderSearch();
+  });
+  it('Snapshot', () => {
+    expect(component).toMatchSnapshot();
   });
 });

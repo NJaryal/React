@@ -27,3 +27,31 @@ exports[`Search component show Snapshot 1`] = `
   </div>
 </form>
 `;
+
+exports[`show Snapshot 1`] = `
+<form
+  className="navbar-form navbar-left"
+  data-test="SearchComponent"
+  role="search"
+>
+  <div
+    className="input-group mb-3"
+  >
+    <input
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Enter movie's name"
+      type="text"
+    />
+    <div
+      className="input-group-append"
+    >
+      <Button
+        className="searchBtn"
+      >
+        Search
+      </Button>
+    </div>
+  </div>
+</form>
+`;

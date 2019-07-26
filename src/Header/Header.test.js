@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Header from './Header';
 
-const setup = () => {
+const renderHeader = () => {
   const component = shallow(<Header />);
   return component;
 };
@@ -10,7 +10,7 @@ const setup = () => {
 describe('Header component', () => {
   let component;
   beforeEach(() => {
-    component = setup();
+    component = renderHeader();
   });
 
   it('should render Component', () => {

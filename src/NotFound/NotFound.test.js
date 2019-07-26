@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import NotFound from './NotFound';
 
-const setup = () => {
+const renderNotFound = () => {
   const component = shallow(<NotFound />);
   return component;
 };
@@ -10,7 +10,7 @@ const setup = () => {
 describe('NotFound component', () => {
   let component;
   beforeEach(() => {
-    component = setup();
+    component = renderNotFound();
   });
 
   it('should render Component', () => {

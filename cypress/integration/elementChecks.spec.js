@@ -1,11 +1,9 @@
 describe('Integartion', () => {
   describe('First Test', () => {
-    it('is working', () => {
-      expect(true).to.equal(true);
-    });
 
     it('blank input field', () => {
       const userTypedMsg = 'Tomb Raider';
+      cy.visit('http://localhost:8080/');
       cy.get('[data-test="SearchComponent"]')
         .should('have.value', userTypedMsg);
     });
@@ -23,12 +21,12 @@ describe('Integartion', () => {
 
   describe('Second Test', () => {
     it('Visit the app', () => {
-      cy.visit('/');
+      cy.visit('http://localhost:8080/');
     });
 
     Cypress.on('uncaught:exception', (err, runnable) => false);
     it('fails to visit the  website1', () => {
-      cy.visit('https://github.com/NJaryal/ReactApp');
+      cy.visit('http://localhost:8080/');
     });
   });
 });

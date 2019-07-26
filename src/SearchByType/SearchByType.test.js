@@ -5,7 +5,7 @@ import { findByTestAttr, checkProps } from '../../Utils';
 import SearchByTypeReducer from './SearchByTypeReducer';
 import { SET_SEARCH_BY_GENRE } from './SearchByTypeActions';
 
-const setup = (props = {}) => {
+const renderSearchByType = (props = {}) => {
   const component = shallow(<SearchByType {...props} />);
   return component;
 };
@@ -27,7 +27,7 @@ describe('SearchByType component', () => {
       const props = {
         activeSearch: 'title',
       };
-      wrapper = setup(props);
+      wrapper = renderSearchByType(props);
     });
 
     it('should render a activeSort', () => {
@@ -57,7 +57,7 @@ describe('SearchByType component', () => {
   describe('should show', () => {
     let component;
     beforeEach(() => {
-      component = setup();
+      component = renderSearchByType();
     });
     it('snapshot', () => {
       expect(component).toMatchSnapshot();
