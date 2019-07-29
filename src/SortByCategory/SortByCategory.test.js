@@ -1,8 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { SortByCategory } from './SortByCategory';
-import { findByTestAttr, checkProps } from '../../Utils';
-import SortByCategoryReducer from './SortByCategoryReducer';
+import { findByTestAttr, checkProps } from '../../__tests__/Utils';
 
 const renderSortByCategory = (props = {}) => {
   const component = shallow(<SortByCategory {...props} />);
@@ -43,15 +42,6 @@ describe('SortByCategory component', () => {
     it('should render a activeSort', () => {
       const activeSort = findByTestAttr(wrapper, 'activeSort');
       expect(activeSort.length).toBe(1);
-    });
-  });
-
-  describe('reducer', () => {
-    it('should return default state', () => {
-      const newState = SortByCategoryReducer(undefined, {});
-      expect(newState).toEqual({
-        activeSort: 'release',
-      });
     });
   });
 

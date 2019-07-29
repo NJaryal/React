@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { findByTestAttr, checkProps } from '../../Utils';
+import { findByTestAttr } from '../../__tests__/Utils';
 import { Search } from './Search';
 
 const renderSearch = (props = {}) => {

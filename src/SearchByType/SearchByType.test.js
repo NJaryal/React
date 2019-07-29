@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { SearchByType } from './SearchByType';
-import { findByTestAttr, checkProps } from '../../Utils';
+import { findByTestAttr, checkProps } from '../../__tests__/Utils';
 import SearchByTypeReducer from './SearchByTypeReducer';
 import { SET_SEARCH_BY_GENRE } from './SearchByTypeActions';
 

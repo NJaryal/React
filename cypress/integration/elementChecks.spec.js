@@ -1,19 +1,28 @@
 describe('Integartion', () => {
   describe('First Test', () => {
-
-    it('blank input field', () => {
-      const userTypedMsg = 'Tomb Raider';
+    it('Search Component Input Field empty', () => {
       cy.visit('http://localhost:8080/');
-      cy.get('[data-test="SearchComponent"]')
-        .should('have.value', userTypedMsg);
+      cy.get('form').within(() => {
+        cy.get('input')
+          .should('have.value', '');
+      });
     });
 
-    it('blank input field', () => {
+    it('Search Input Field - Searched Movie', () => {
+      cy.visit('http://localhost:8080/');
+      cy.get('form').within(() => {
+        const MovieName = 'Movie name';
+        cy.get('input')
+          .should('have.value', MovieName);
+      });
+    });
+
+    it('SortByCategory component Label check', () => {
       cy.get('[data-test="activeSearch"]')
         .contains('Title');
     });
 
-    it('blank input field', () => {
+    it('SearchByType component label check', () => {
       cy.get('[data-test="activeSort"]')
         .contains('RELEASE DATE');
     });

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Movie } from './Movie';
-import { checkProps } from '../../Utils';
+import { checkProps } from '../../__tests__/Utils';
 
 const setup = () => {
   const component = shallow(<Movie />);

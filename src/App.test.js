@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import 'babel-polyfill';
 import App from './App';
 
-const setup = () => {
+const AppRender = () => {
   const component = shallow(<App />).childAt(0).dive();
   return component;
 };
@@ -11,7 +11,7 @@ const setup = () => {
 describe('App Component', () => {
   let component;
   beforeEach(() => {
-    component = setup();
+    component = AppRender();
   });
 
   it('should render Component', () => {

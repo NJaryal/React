@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import MovieDetailed from 'src/MovieDetailed/MovieDetailed';
 import { requestSingleMovieData } from 'src/MovieDetailed/MovieDetailedActions';
-import { loadtoDos } from '../lib/service';
 
 export class Movie extends Component {
   componentDidMount() {
@@ -14,7 +13,7 @@ export class Movie extends Component {
 
   render() {
     const { singleMovieData } = this.props;
-    return <MovieDetailed singleMovieData={singleMovieData} className="MovieComponent" data-test="Movie"/>;
+    return <MovieDetailed singleMovieData={singleMovieData} className="MovieComponent" data-test="Movie" />;
   }
 }
 
