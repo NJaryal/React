@@ -8,24 +8,18 @@ const renderSearch = (props = {}) => {
   return component;
 };
 
-describe('should render Search', () => {
+describe('Search', () => {
   let component;
   beforeEach(() => {
     component = renderSearch();
   });
-
-  it('should render Search', () => {
+  it('should render', () => {
     const findMovieText = findByTestAttr(component, 'SearchComponent');
     expect(findMovieText.length).toBe(1);
   });
-});
 
-describe('show', () => {
-  let component;
-  beforeEach(() => {
-    component = renderSearch();
-  });
   it('Snapshot', () => {
     expect(component).toMatchSnapshot();
   });
 });
+

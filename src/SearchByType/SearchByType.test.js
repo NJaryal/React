@@ -36,24 +36,6 @@ describe('SearchByType component', () => {
     });
   });
 
-  describe('reducer', () => {
-    it('should return default state', () => {
-      const newState = SearchByTypeReducer(undefined, {});
-      expect(newState).toEqual({ 
-        activeSearch: 'title',
-      });
-    });
-
-    it('should return new state if receiving Type', () => {
-      const SearchBy = { activeSearch: 'genre' };
-      const newState = SearchByTypeReducer(undefined, {
-        type: SET_SEARCH_BY_GENRE,
-        payload: SearchBy,
-      });
-      expect(newState).toEqual(SearchBy);
-    });
-  });
-
   describe('should show', () => {
     let component;
     beforeEach(() => {
