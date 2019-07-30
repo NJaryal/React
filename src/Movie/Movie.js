@@ -13,7 +13,7 @@ export class Movie extends Component {
 
   render() {
     const { singleMovieData } = this.props;
-    return <MovieDetailed singleMovieData={singleMovieData} className="MovieComponent" data-test="Movie" />;
+    return <MovieDetailed singleMovieData={singleMovieData} className="MovieComponent" />;
   }
 }
 
