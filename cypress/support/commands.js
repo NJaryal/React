@@ -6,5 +6,5 @@ Cypress.Commands.add('MovieAndvisit', (data = 'fixture:moviesApi') => {
 
 
 Cypress.Commands.add('Movievisit', () => {
-    cy.visit('http://localhost:8080/');
+  cy.visit('http://localhost:8080/'); 
 });
