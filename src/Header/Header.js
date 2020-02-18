@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.css';
 
 const Header = () => (
-  <div>
+  <div data-test="HeaderComponent">
     <h4 className={styles.mainHeading}>
       <strong>netflix</strong>
         roulette

@@ -7,7 +7,7 @@ import cx from 'classnames';
 import globalStyles from '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import styles from './Search.css';
 
-class Search extends React.Component {
+export class Search extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -17,7 +17,7 @@ class Search extends React.Component {
   render() {
     const  { inputs } = this.props;
     return (
-      <form className={cx(globalStyles['navbar-form'], globalStyles['navbar-left'])} role="search">
+      <form className={cx(globalStyles['navbar-form'], globalStyles['navbar-left'])} role="search" data-test="SearchComponent">
         <div className={cx(globalStyles['input-group'], globalStyles['mb-3'])}>
           <input type="text" value={inputs} className={globalStyles['form-control']} placeholder="Enter movie's name" onChange={this.handleSearchTextChange} />
           <div className="input-group-append">

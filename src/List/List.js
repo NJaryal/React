@@ -16,7 +16,7 @@ class List extends Component {
       <div className={cx(globalStyles.row, globalStyles['justify-content-center'], styles.mainContent)}>
         {
         data.map(movie => (
-          <div className={cx(globalStyles.card, globalStyles['col-md-3'], globalStyles['mx-3'], globalStyles['my-3'], globalStyles['px-0'])} key={movie.id}>
+          <div className={cx(globalStyles.card, globalStyles['col-md-3'], globalStyles['mx-3'], globalStyles['my-3'], globalStyles['px-0'])} key={movie.id} data-test="MovieList">
             <Link to={`/film/${movie.id}`}>
               <img
                 className={globalStyles['card-img-top']}

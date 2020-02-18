@@ -15,7 +15,7 @@ import {
   clickStoreData,
 } from './MovieListActions';
 
-class MovieList extends Component {
+export class MovieList extends Component {
   constructor(props) {
     super(props);
   }

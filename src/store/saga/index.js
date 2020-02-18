@@ -17,7 +17,7 @@ import {
 } from "src/MovieDetailed/MovieDetailedActions";
 
 const getPage = state => state.nextPage;
-function* fetchProducts() {
+export function* fetchProducts() {
   const page = yield select(getPage);
   const dataDetail = yield call(moviesData, page);
   yield put(receiveApiData(dataDetail));

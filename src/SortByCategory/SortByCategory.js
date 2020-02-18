@@ -7,17 +7,17 @@ import { setSortByRating, setSortByReleaseDate } from './SortByCategoryActions';
 import globalStyles from '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import styles from './SortByCategory.css';
 
-const SortByCategory = ({
+export const SortByCategory = ({
   activeSort, count, dispatchSetSortByRating, dispatchSetSortByReleaseDate,
 }) => (
-  <div className={cx(styles.moviesubheadingSection, globalStyles.clearfix)}>
-    <div className={cx(globalStyles['float-left'], globalStyles['float-md-left'])}>
+  <div className={cx(styles.moviesubheadingSection, globalStyles.clearfix)} data-test="SortByCategory">
+    <div className={cx(globalStyles['float-left'], globalStyles['float-md-left'])} data-test="count">
       <strong>
         {count}
       </strong>
         movie found
     </div>
-    <div className={cx(globalStyles['float-right'], globalStyles['float-md-right'])}>
+    <div className={cx(globalStyles['float-right'], globalStyles['float-md-right'])} data-test="activeSort">
       SORT BY
       <Button className={`cx(globalStyles['btn-sm'], globalStyles['ml-1']) ${activeSort === 'release' ? styles.active : styles.inactive}`} onClick={dispatchSetSortByReleaseDate} children="RELEASE DATE" />
       <Button className={`cx(globalStyles['btn-sm'], globalStyles['ml-1']) ${activeSort === 'rating' ? styles.active : styles.inactive}`} onClick={dispatchSetSortByRating} children="RATING" />

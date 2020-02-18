@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render Component 1`] = `
+<div
+  data-test="HeaderComponent"
+>
+  <h4
+    className="mainHeading"
+  >
+    <strong>
+      netflix
+    </strong>
+    roulette
+  </h4>
+  <h1
+    className="searchMovies"
+  >
+    Find your Movie
+  </h1>
+</div>
+`;

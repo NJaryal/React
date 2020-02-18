@@ -6,10 +6,10 @@ import { setSearchByTitle, setSearchByGenre } from './SearchByTypeActions';
 import globalStyles from '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import styles from './SearchByType.css';
 
-const SearchByType = ({
+export const SearchByType = ({
   activeSearch, dispatchSetSearchByTitle, dispatchSetSearchByGenre,
 }) => (
-  <div className={globalStyles['btn-group']} role="group" aria-label="Basic example">
+  <div className={globalStyles['btn-group']} role="group" aria-label="Basic example" data-test="activeSearch">
         SEARCH BY
     <Button className={`${activeSearch === 'title' ? styles.active : styles.inactive}`} onClick={dispatchSetSearchByTitle} children="Title" />
     <Button className={`${activeSearch === 'genre' ? styles.active : styles.inactive}`} onClick={dispatchSetSearchByGenre} children="Gengre" />

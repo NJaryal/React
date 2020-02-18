@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchByType component should show snapshot 1`] = `
+<div
+  aria-label="Basic example"
+  className="btn-group"
+  data-test="activeSearch"
+  role="group"
+>
+  SEARCH BY
+  <Button
+    className="inactive"
+  >
+    Title
+  </Button>
+  <Button
+    className="inactive"
+  >
+    Gengre
+  </Button>
+</div>
+`;

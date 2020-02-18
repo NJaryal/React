@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie component Check PropTypes should render Component 1`] = `undefined`;
+
+exports[`Movie component should render Component 1`] = `undefined`;
